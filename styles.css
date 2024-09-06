@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+header {
+  background-color: #ffd700;
+  background: linear-gradient(135deg, #ffd700, #e6ac00);
+  color: white;
+
+  padding: 10px 0;
+  height: 15vh;
+  position: fixed;
+  border-bottom-right-radius: 30px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 10vh;
+}
+
+.logo {
+  height: 13vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #464646;
+  font-weight: bold;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.hero {
+  background-image: url("./Images/hero2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: rgb(11, 11, 11);
+  padding: 100px 0;
+  min-height: 60vh;
+}
+.hero h1 {
+  font-size: 4rem;
+  color: white;
+  line-height: 70px;
+  font-weight: 300;
+}
+.hero p {
+  font-size: 2rem;
+  color: white;
+  font-weight: 280;
+}
+.chop {
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: 22vw;
+  cursor: pointer;
+  background-color: #91983b;
+  background: linear-gradient(135deg, #91983b, #cbd36a);
+  color: rgb(255, 255, 255);
+  transition: ease-in-out;
+  transition: background-color 0.8s, color 0.8s;
+  transition: font-size 0.8s, color 0.8s;
+  transition: width 0.8s, color 0.8s;
+  border-radius: 15px;
+  border: none;
+  height: 4vw;
+}
+.chop:hover {
+  font-size: 1.2rem;
+  width: 20vw;
+  background-color: rgb(255, 217, 0);
+  background: linear-gradient(135deg, #ffd700, #e6ac00);
+  color: rgb(0, 0, 0);
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.image:hover {
+  color: #91983b;
+}
+
+.image {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 8px;
+  flex: 1 1 350px;
+  cursor: pointer;
+}
+.image img:hover {
+  width: 95%;
+}
+.image img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: width 0.3s, color 0.8s;
+}
+.hero2 {
+  background-image: url("./Images/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 100px 0;
+  min-height: 30vh;
+}
+
+.hero2 p {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 280;
+  cursor: pointer;
+}
+.hero2 h2 {
+  font-size: 2rem;
+  color: #e6ac00;
+  font-weight: 500;
+  cursor: pointer;
+}
+.hero2 p i {
+  color: rgb(255, 255, 255);
+  transition: font-size 0.2s, color 0.8s;
+}
+span {
+  font-weight: bold;
+  color: #e6ac00;
+}
+
+.hero2 p i:hover {
+  font-size: 2.5rem;
+  color: #e6ac00;
+}
+#fname,
+#lname,
+#email,
+#num,
+#message {
+  width: 10vw;
+  height: 7vh;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 8px !important;
+  border: none;
+  padding-left: 10px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
